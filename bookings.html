@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental - Bookings</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/booking.css">
+    <link rel="icon" type="image/icon" href="./images/flaticon.png">
+</head>
+<body>
+    <header>
+        <div class="header-div">
+            <img src="./images/logo.png" class="logo" alt="car_logo">
+            <h1>HDN Car Rental</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="hero">
+            <img src="./images/booking_hero.jpg" alt="hero_image">
+            <h1>Booking Reservation</h1>
+        </div>
+
+        <section class="booking-form">
+            <h1>Book Your Car</h1>
+            <form action="bookings.html" method="POST">
+                <label for="car-type">Select Car Type:</label>
+                <select id="car-type" name="car-type">
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="hatchback">Hatchback</option>
+                    <option value="convertible">Convertible</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+
+                <label for="car-model">Select Car Model:</label>
+                <select id="car-model" name="car-model">
+                    <option value="model1">Model 1</option>
+                    <option value="model2">Model 2</option>
+                    <option value="model3">Model 3</option>
+                </select>
+
+                <label for="pickup-date">Pick-up Date:</label>
+                <input type="date" id="pickup-date" name="pickup-date" required>
+
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return-date" required>
+
+                <label for="location">Pick-up Location:</label>
+                <input type="text" id="location" name="location" placeholder="City, State" required>
+
+                <label for="extras">Extras:</label>
+                <select id="extras" name="extras" multiple>
+                    <option value="gps">GPS</option>
+                    <option value="child-seat">Child Seat</option>
+                    <option value="insurance">Insurance</option>
+                </select>
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+
+                <label for="comments" class="full-width">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any special requests or notes"></textarea>
+
+                <button type="submit" class="full-width">Confirm Booking</button>
+            </form>
+        </section>
+
+        <h2>Our Fleet Types</h2>
+        <div class="card-container">
+            
+            <div class="card">
+                <img src="./images/sedan1.jpg" alt="Car_image_1">
+                <img src="./images/sedan2.jpg" alt="Car_image_1">
+                <h2>Sedan</h2>
+            </div>
+            <div class="card">
+                <img src="./images/hatchback1.jpg" alt="Car_image_2">
+                <img src="./images/hatchback2.jpg" alt="Car_image_2">
+                <h2>Hatchback</h2>
+            </div>
+            <div class="card">
+                <img src="./images/suv1.jpg" alt="Car_image_3">
+                <img src="./images/suv2.jpg" alt="Car_image_3">
+                <h2>SUV</h2>
+            </div>
+            <div class="card">
+                <img src="./images/luxury1.jpg" alt="Car_image_4">
+                <img src="./images/luxury2.jpg" alt="Car_image_4">
+                <h2>Luxury</h2>
+            </div>
+            <div class="card">
+                <img src="./images/convertible1.jpg" alt="Car_image_5">
+                <img src="./images/convertible2.jpg" alt="Car_image_5">
+                <h2>Convertible</h2>
+            </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HDN Car Rental. All rights reserved.</p>
+    </footer>
+</body>
+</html>
