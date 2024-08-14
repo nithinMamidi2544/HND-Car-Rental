@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Luckiest+Guy&display=swap'); 
+
+*{
+    font-family:  "Abril Fatface", Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5ebea, #a5a2a1);
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-div {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.header-div h1{
+    font-family: "Luckiest Guy";
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 1%;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+    margin: 0;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Hover and Active Effects */
+nav a:hover {
+    background-color: #555;
+    font-size: larger;
+}
+
+nav a.active {
+    background-color: #ff6f61;
+}
+
+/* index.html */
+
+#indexBanner{
+    color: #fff;
+}
+
+.options{
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.options h3, p{
+    text-align: center;
+}
+
+.whyUs{
+    margin-left: 10%;
+    margin-bottom: 50px;
+    margin-top: 5%;
+}
+
+.whyUs h2{
+    text-align: center;
+}
+
+.reasons{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    grid-gap: 80px;    
+}
+
+.reasons-card{
+    position: relative;
+    overflow: hidden;
+}
+
+.reasons-card img{
+    margin-left: 25%;
+}
+
+.reasons-card h3, p{
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+  
+}
+/* Mobile and Tablet View */
+@media (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-div {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        margin-left: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;    
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .reasons{
+        display: block;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    body{
+        width: 100%;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-left: 125px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;    
+    }
+
+    nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .reasons{
+        display: block;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,112 @@
+.trips h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.trip-item {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.trip-item img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.trip-details {
+    padding: 20px;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.trip-details h2 {
+    margin-top: 0;
+}
+
+.booking-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.booking-button:hover {
+    background-color: #e65c00;
+}
+
+.trip-list {
+    margin-top: 40px;
+}
+
+.trip-list img{
+    width: 400px;
+}
+
+.trip-list h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.trip-item{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.trip-item img {
+    float: left;
+    width: 400px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.trip-details h2 {
+    margin-top: 0;
+}
+
+.trip-details a {
+    display: block;
+    margin-top: 10px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.trip-details a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+
+    .trip-item img, .trip-list img{
+        width: 250px;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .trip-item{
+        display: block;
+        width: 300px;
+    }
+
+    .trip-details{
+        width: 300px;
+    }
+
+    .trip-item img, .trip-list img{
+        width: 300px;
+    }
+
+
+}
